@@ -2,23 +2,12 @@
 <html>
 <head>
 	<title>Proposta de Casamento</title>
+	<script src="./scripts/meuScript.js"></script>
 </head>
 <body>
 	<h1>Você aceita se casar comigo?</h1>
 	<button onclick="moveSim()">Sim</button>
 	<button onclick="moveNao()">Não</button>
-
-	<script>
-		function moveSim() {
-			let sim = document.getElementById("sim");
-			let position = Math.random() * 500;
-			sim.style.left = position + "px";
-			sim.style.top = position + "px";
-		}
-		function moveNao() {
-			alert("Que pena!");
-		}
-	</script>
 
 	<div id="sim" style="position:absolute;top:200px;left:200px;">
 		<img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/heavy-check-mark_2714.png" width="100px">
@@ -26,6 +15,3 @@
 
 </body>
 </html>
-
-<script src="./scripts/meuScript.js"></script>
-
